@@ -117,7 +117,7 @@ public class Card
     {
 	sign = Hand.element;
 	
-	FileReader fr = new FileReader("Card_utf8.txt");
+	FileReader fr = new FileReader("files/Card_utf8.txt");
 	BufferedReader in = new BufferedReader(fr);
 
 	String zeile = null;
