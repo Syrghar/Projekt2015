@@ -112,8 +112,9 @@ public class Card
 
 	}
     }
-    
-    public static String showCard(String sign) throws IOException
+
+    //TODO: try catch block
+    public static String showCard(String sign) throws IOException 
     {
 	sign = Hand.element;
 	

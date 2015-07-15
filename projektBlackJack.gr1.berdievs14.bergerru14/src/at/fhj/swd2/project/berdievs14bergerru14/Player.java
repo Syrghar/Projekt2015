@@ -2,14 +2,30 @@ package at.fhj.swd2.project.berdievs14bergerru14;
 
 public class Player
 {
-    private int id; // kann man schmeissen
     private String name;
     private int credits; // Quasi KONTO
     private int bet; // Einsatz
     private boolean active; // Aktiv wenn Spieler gleich verloren bzw gleich gewonnen hat dann wird auf inaktiv gesetzt (active=false)
-
+    private int countWin;
+    private int countLose;
     
-    public boolean isActive()
+    public int getCountWin() {
+		return countWin;
+	}
+
+	public void setCountWin(int countWin) {
+		this.countWin = countWin;
+	}
+
+	public int getCountLose() {
+		return countLose;
+	}
+
+	public void setCountLose(int countLose) {
+		this.countLose = countLose;
+	}
+
+	public boolean isActive()
     {
         return active;
     }
@@ -17,16 +33,6 @@ public class Player
     public void setActive(boolean active)
     {
         this.active = active;
-    }
-
-    public int getId()
-    {
-        return id;
-    }
-
-    public void setId(int id)
-    {
-        this.id = id;
     }
 
     public String getName()
@@ -49,10 +55,6 @@ public class Player
         this.credits = credits;
     }
 
-
-    
-    
-    
     public int getBet()
     {
         return bet;
